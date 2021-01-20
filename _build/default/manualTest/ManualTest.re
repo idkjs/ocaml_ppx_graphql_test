@@ -9,10 +9,10 @@ type z = y;
 
 [@deriving gql]
 type t = {
-  a: list(array(option(int))),
-  b: x,
+  a: option(list(array(option(int)))),
+  b: option(list(x)),
   c: y,
-  d: z,
+  d: array(z),
 };
 
 print_endline("\n" ++ t_gql);

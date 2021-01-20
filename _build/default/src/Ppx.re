@@ -16,33 +16,33 @@ let get_core_type = (core_type, loc) => {
   };
 };
 
-let rec convert_nested_core_types = (core_type, type_name, loc): label => {
+let rec convert_nested_core_types = (core_type, type_name, opt, loc): label => {
   let core_type_string = extract_string_from_core_type(core_type, loc);
-  print_endline("core_str " ++ core_type_string);
-  print_endline("type " ++ type_name);
+/*   print_endline(Printf.sprintf("opt: %B", opt));
+ */
   switch (type_name) {
+  | "int"
+  | "string"
+  | "bool" => (type_name |> String.capitalize_ascii) ++ (opt ? "" : "!")
   | "option" =>
-    List.mem(core_type_string, basicTypes)
-      ? core_type_string |> String.capitalize_ascii
-      : convert_nested_core_types(
-          get_core_type(core_type, loc) |> List.hd,
+    convert_nested_core_types(
+          List.mem(core_type_string, basicTypes) ? core_type : get_core_type(core_type, loc) |> List.hd,
           core_type_string,
+          true,
           loc,
         )
   | "list"
   | "array" =>
     "["
     ++ (
-      List.mem(core_type_string, basicTypes)
-        ? (core_type_string |> String.capitalize_ascii) ++ "!"
-        : convert_nested_core_types(
-            get_core_type(core_type, loc) |> List.hd,
+      convert_nested_core_types(
+            List.mem(core_type_string, basicTypes) ? core_type : get_core_type(core_type, loc) |> List.hd,
             core_type_string,
+            false,
             loc,
           )
     )
-    ++ "]!"
-    ++ (core_type_string == "option" ? "" : "!")
+    ++ "]" ++ (opt ? "" : "!")
   | _ => Location.raise_errorf(~loc, "Could not identify kind of type")
   };
 };
@@ -53,7 +53,7 @@ let convert_typename = (type_name, core_types, loc): label => {
     List.mem(type_name, basicTypes)
       ? (type_name |> String.capitalize_ascii) ++ "!"
       : (type_name ++ "_gql") ++ "!"
-  | [core_type] => convert_nested_core_types(core_type, type_name, loc)
+  | [core_type] => convert_nested_core_types(core_type, type_name, false, loc)
   | _ => Location.raise_errorf(~loc, "List of more than one core_type")
   };
 };
@@ -155,20 +155,50 @@ let rec get_record_list_without_first_basic_records =
     ? get_record_list_without_first_basic_records(List.tl(lds), loc) : lds;
 };
 
+let rec convert_complex_nested_core_types = (core_type, type_name, opt, loc) => {
+  let core_type_string = extract_string_from_core_type(core_type, loc);
+/*   print_endline(Printf.sprintf("opt: %B", opt));
+ */
+  switch (type_name) {
+  | "option" =>
+    convert_complex_nested_core_types(
+          List.length(get_core_type(core_type, loc)) > 0 ? get_core_type(core_type, loc) |> List.hd : core_type,
+          core_type_string,
+          true,
+          loc,
+        )
+  | "list"
+  | "array" =>
+    %expr
+    [%e estring(~loc, "[")]
+    ++ (
+      [%e convert_complex_nested_core_types(
+            List.length(get_core_type(core_type, loc)) > 0 ? get_core_type(core_type, loc) |> List.hd : core_type,
+            core_type_string,
+            false,
+            loc,
+          )]
+    )
+    ++ [%e estring(~loc, "]" ++ (opt ? "" : "!"))]
+  | _ => %expr [%e evar(~loc, type_name ++ "_gql")]
+  };
+};
+
 let complexGqlDeclaration = (ld, loc) => {
-  let type_name =
+  let type_name_expr =
     (
       switch (ld.pld_type.ptyp_desc) {
-      | Ptyp_constr({txt: Lident(typename), _}, _) => typename
+      | Ptyp_constr({txt: Lident(typename), _}, core_types) => {
+        core_types == [] ? {%expr [%e evar(~loc, typename ++ "_gql")]} : convert_complex_nested_core_types(core_types |> List.hd, typename, false, loc)
+      }
       | _ => Location.raise_errorf(~loc, "Coud not access typename")
       }
-    )
-    ++ "_gql";
+    );
   let record_field_name = " " ++ ld.pld_name.txt ++ ": ";
 
   %expr
   [%e estring(~loc, record_field_name)]
-  ++ [%e evar(~loc, type_name)]
+  ++ [%e type_name_expr]
   ++ [%e estring(~loc, "\n")];
 };
 

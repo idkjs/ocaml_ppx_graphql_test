@@ -1,4 +1,4 @@
 #!/bin/sh
-export ESY__NODE_BIN_PATH="/home/melina/ppx/ppxlib-simple-example/_esy/default/bin"
-exec "/usr/bin/node" -r "/home/melina/ppx/ppxlib-simple-example/_esy/default/pnp.js" "$@"
+export ESY__NODE_BIN_PATH="/Volumes/external/Github/ocaml_ppx_graphql_test/_esy/default/bin"
+exec "/Users/mandalarian/.fnm/node-versions/v14.15.4/installation/bin/node" -r "/Volumes/external/Github/ocaml_ppx_graphql_test/_esy/default/pnp.js" "$@"
               

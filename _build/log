@@ -1,5 +1,238 @@
-# dune ocaml-merlin --no-print-directory
+# /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__dune-opam__c__2.7.1-9d696df9/bin/dune build --promote-install-files --root .
 # OCAMLPARAM: unset
-# Workspace root: /home/melina/ppx/ppxlib-gql
-$ /usr/bin/nproc > /tmp/dune250691.output 2> /dev/null
-# Auto-detected concurrency: 1
+# Workspace root: /Volumes/external/Github/ocaml_ppx_graphql_test
+$ /usr/local/bin/nproc > /tmp/duneecacc6.output 2> /dev/null
+# Auto-detected concurrency: 4
+# disable binary cache
+$ /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__ocamlfind-opam__c__1.8.1-eb1b497b/bin/ocamlfind printconf path > /tmp/dunebae1c2.output
+$ /Users/mandalarian/.esy/3____________________________________________________________/i/ocaml-4.10.0-f28f0ffe/bin/ocamlc.opt -config > /tmp/dune963ecc.output
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Dyn
+#  ; merlin = true
+#  ; for_host = None
+#  ; fdo_target_exe = None
+#  ; build_dir = "default"
+#  ; toplevel_path =
+#      Some
+#        External
+#          "/Users/mandalarian/.esy/3____________________________________________________________/i/ocaml-4.10.0-f28f0ffe/lib/ocaml"
+#  ; ocaml_bin =
+#      External
+#        "/Users/mandalarian/.esy/3____________________________________________________________/i/ocaml-4.10.0-f28f0ffe/bin"
+#  ; ocaml =
+#      Ok
+#        External
+#          "/Users/mandalarian/.esy/3____________________________________________________________/i/ocaml-4.10.0-f28f0ffe/bin/ocaml"
+#  ; ocamlc =
+#      External
+#        "/Users/mandalarian/.esy/3____________________________________________________________/i/ocaml-4.10.0-f28f0ffe/bin/ocamlc.opt"
+#  ; ocamlopt =
+#      Ok
+#        External
+#          "/Users/mandalarian/.esy/3____________________________________________________________/i/ocaml-4.10.0-f28f0ffe/bin/ocamlopt.opt"
+#  ; ocamldep =
+#      Ok
+#        External
+#          "/Users/mandalarian/.esy/3____________________________________________________________/i/ocaml-4.10.0-f28f0ffe/bin/ocamldep.opt"
+#  ; ocamlmklib =
+#      Ok
+#        External
+#          "/Users/mandalarian/.esy/3____________________________________________________________/i/ocaml-4.10.0-f28f0ffe/bin/ocamlmklib.opt"
+#  ; env =
+#      map
+#        { "INSIDE_DUNE" :
+#            "/Volumes/external/Github/ocaml_ppx_graphql_test/_build/default"
+#        ; "MANPATH" :
+#            "/Volumes/external/Github/ocaml_ppx_graphql_test/_build/install/default/bin"
+#        ; "OCAMLFIND_IGNORE_DUPS_IN" :
+#            "/Volumes/external/Github/ocaml_ppx_graphql_test/_build/install/default/lib"
+#        ; "OCAMLTOP_INCLUDE_PATH" :
+#            "/Volumes/external/Github/ocaml_ppx_graphql_test/_build/install/default/lib/toplevel"
+#        ; "OCAML_COLOR" : "always"
+#        ; "OPAMCOLOR" : "always"
+#        }
+#  ; findlib_path =
+#      [ External
+#          "/Users/mandalarian/.esy/3____________________________________________________________/i/esy_ocaml__s__reason-f4b43461/lib"
+#      ; External
+#          "/Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__dune-opam__c__2.7.1-9d696df9/lib"
+#      ; External
+#          "/Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__merlin-opam__c__3.4.1-30e9a5ac/lib"
+#      ; External
+#          "/Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__ocaml_lsp_server-c9f49d37/lib"
+#      ; External
+#          "/Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__ocaml_migrate_parsetree-opam__c__1.7.3-87f9c69a/lib"
+#      ; External
+#          "/Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__ppxlib-opam__c__0.14.0-52cfcd40/lib"
+#      ; External
+#          "/Users/mandalarian/.esy/3____________________________________________________________/i/reason_native__s__rely-3.2.1-6c9ccc8a/lib"
+#      ; External
+#          "/Users/mandalarian/.esy/3____________________________________________________________/i/ocaml-4.10.0-f28f0ffe/lib"
+#      ; External
+#          "/Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__fix-opam__c__20200131-8acc68bd/lib"
+#      ; External
+#          "/Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__menhir-opam__c__20200624-57e0a73b/lib"
+#      ; External
+#          "/Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__merlin_extend-opam__c__0.6-fbb7c838/lib"
+#      ; External
+#          "/Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__ocamlfind-opam__c__1.8.1-eb1b497b/lib"
+#      ; External
+#          "/Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__result-opam__c__1.5-ed51a91d/lib"
+#      ; External
+#          "/Users/mandalarian/.esy/3____________________________________________________________/i/esy_ocaml__s__substs-0.0.1-dcea4195/lib"
+#      ; External
+#          "/Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__base_threads-opam__c__base-beddf47d/lib"
+#      ; External
+#          "/Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__base_unix-opam__c__base-b5812a5c/lib"
+#      ; External
+#          "/Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__csexp-opam__c__1.3.2-f35a761d/lib"
+#      ; External
+#          "/Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__dot_merlin_reader-opam__c__3.4.1-a92aee74/lib"
+#      ; External
+#          "/Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__yojson-opam__c__1.7.0-8cf397b0/lib"
+#      ; External
+#          "/Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__dune_build_info-opam__c__2.7.1-dbff1540/lib"
+#      ; External
+#          "/Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__ppx__yojson__conv__lib-opam__c__v0.14.0-be1799d7/lib"
+#      ; External
+#          "/Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__stdlib_shims-opam__c__0.1.0-fc56ed62/lib"
+#      ; External
+#          "/Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__ppx__derivers-opam__c__1.2.1-23bba8ab/lib"
+#      ; External
+#          "/Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__base-opam__c__v0.14.0-fdb4975a/lib"
+#      ; External
+#          "/Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__ocaml_compiler_libs-opam__c__v0.12.3-05a0c6d4/lib"
+#      ; External
+#          "/Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__stdio-opam__c__v0.14.0-c64007bd/lib"
+#      ; External
+#          "/Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__junit-opam__c__2.0.2-1891b7ef/lib"
+#      ; External
+#          "/Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__re-opam__c__1.9.0-db9d8d12/lib"
+#      ; External
+#          "/Users/mandalarian/.esy/3____________________________________________________________/i/reason_native__s__cli-0.0.1-alpha-88aff0fb/lib"
+#      ; External
+#          "/Users/mandalarian/.esy/3____________________________________________________________/i/reason_native__s__file_context_printer-0.0.3-8643cfba/lib"
+#      ; External
+#          "/Users/mandalarian/.esy/3____________________________________________________________/i/reason_native__s__pastel-0.3.0-f4797305/lib"
+#      ; External
+#          "/Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__menhirlib-opam__c__20200624-b7ec980c/lib"
+#      ; External
+#          "/Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__menhirsdk-opam__c__20200624-d7b01237/lib"
+#      ; External
+#          "/Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__cppo-opam__c__1.6.6-ef532413/lib"
+#      ; External
+#          "/Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__conf_m4-opam__c__1-45a7fa38/lib"
+#      ; External
+#          "/Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__biniou-opam__c__1.2.1-e81cb869/lib"
+#      ; External
+#          "/Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__easy_format-opam__c__1.3.2-654cce64/lib"
+#      ; External
+#          "/Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__dune_configurator-opam__c__2.7.1-72ef5082/lib"
+#      ; External
+#          "/Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__sexplib0-opam__c__v0.14.0-d5d0273d/lib"
+#      ; External
+#          "/Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__ptime-opam__c__0.8.5-f115d201/lib"
+#      ; External
+#          "/Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__tyxml-opam__c__4.4.0-37997594/lib"
+#      ; External
+#          "/Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__seq-opam__c__base-4220c996/lib"
+#      ; External
+#          "/Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__ocamlbuild-opam__c__0.14.0-f67b8039/lib"
+#      ; External
+#          "/Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__topkg-opam__c__1.0.3-a2e289c7/lib"
+#      ; External
+#          "/Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__uutf-opam__c__1.0.2-3fee89d2/lib"
+#      ; External
+#          "/Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__uchar-opam__c__0.0.2-a7069d50/lib"
+#      ; External
+#          "/Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__ocamlfind-opam__c__1.8.1-eb1b497b/lib"
+#      ]
+#  ; arch_sixtyfour = true
+#  ; natdynlink_supported = true
+#  ; supports_shared_libraries = true
+#  ; ocaml_config =
+#      { version = "4.10.0"
+#      ; standard_library_default =
+#          "/Users/mandalarian/.esy/3____________________________________________________________/i/ocaml-4.10.0-f28f0ffe/lib/ocaml"
+#      ; standard_library =
+#          "/Users/mandalarian/.esy/3____________________________________________________________/i/ocaml-4.10.0-f28f0ffe/lib/ocaml"
+#      ; standard_runtime = "the_standard_runtime_variable_was_deleted"
+#      ; ccomp_type = "cc"
+#      ; c_compiler = "gcc"
+#      ; ocamlc_cflags = [ "-O2"; "-fno-strict-aliasing"; "-fwrapv" ]
+#      ; ocamlc_cppflags = [ "-D_FILE_OFFSET_BITS=64"; "-D_REENTRANT" ]
+#      ; ocamlopt_cflags = [ "-O2"; "-fno-strict-aliasing"; "-fwrapv" ]
+#      ; ocamlopt_cppflags = [ "-D_FILE_OFFSET_BITS=64"; "-D_REENTRANT" ]
+#      ; bytecomp_c_compiler =
+#          [ "gcc"
+#          ; "-O2"
+#          ; "-fno-strict-aliasing"
+#          ; "-fwrapv"
+#          ; "-D_FILE_OFFSET_BITS=64"
+#          ; "-D_REENTRANT"
+#          ]
+#      ; bytecomp_c_libraries = [ "-lm"; "-lpthread" ]
+#      ; native_c_compiler =
+#          [ "gcc"
+#          ; "-O2"
+#          ; "-fno-strict-aliasing"
+#          ; "-fwrapv"
+#          ; "-D_FILE_OFFSET_BITS=64"
+#          ; "-D_REENTRANT"
+#          ]
+#      ; native_c_libraries = [ "-lm" ]
+#      ; cc_profile = []
+#      ; architecture = "amd64"
+#      ; model = "default"
+#      ; int_size = 63
+#      ; word_size = 64
+#      ; system = "macosx"
+#      ; asm = [ "clang"; "-arch"; "x86_64"; "-Wno-trigraphs"; "-c" ]
+#      ; asm_cfi_supported = false
+#      ; with_frame_pointers = false
+#      ; ext_exe = ""
+#      ; ext_obj = ".o"
+#      ; ext_asm = ".s"
+#      ; ext_lib = ".a"
+#      ; ext_dll = ".so"
+#      ; os_type = "Unix"
+#      ; default_executable_name = "a.out"
+#      ; systhread_supported = true
+#      ; host = "x86_64-apple-darwin20.1.0"
+#      ; target = "x86_64-apple-darwin20.1.0"
+#      ; profiling = false
+#      ; flambda = false
+#      ; spacetime = false
+#      ; safe_string = true
+#      ; exec_magic_number = "Caml1999X027"
+#      ; cmi_magic_number = "Caml1999I027"
+#      ; cmo_magic_number = "Caml1999O027"
+#      ; cma_magic_number = "Caml1999A027"
+#      ; cmx_magic_number = "Caml1999Y027"
+#      ; cmxa_magic_number = "Caml1999Z027"
+#      ; ast_impl_magic_number = "Caml1999M027"
+#      ; ast_intf_magic_number = "Caml1999N027"
+#      ; cmxs_magic_number = "Caml1999D027"
+#      ; cmt_magic_number = "Caml1999T027"
+#      ; natdynlink_supported = true
+#      ; supports_shared_libraries = true
+#      ; windows_unicode = false
+#      }
+#  }
+$ (cd _build/default && /Users/mandalarian/.esy/3____________________________________________________________/i/ocaml-4.10.0-f28f0ffe/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -49 -nopervasives -nostdlib -g -bin-annot -I src/.ppx_deriving_accessors.objs/byte -no-alias-deps -opaque -o src/.ppx_deriving_accessors.objs/byte/ppx_deriving_accessors.cmo -c -impl src/ppx_deriving_accessors.ml-gen)
+$ (cd _build/default && /Users/mandalarian/.esy/3____________________________________________________________/i/ocaml-4.10.0-f28f0ffe/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I src/.ppx_deriving_accessors.objs/byte -I /Users/mandalarian/.esy/3____________________________________________________________/i/ocaml-4.10.0-f28f0ffe/lib/ocaml/compiler-libs -I /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__base-opam__c__v0.14.0-fdb4975a/lib/base -I /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__base-opam__c__v0.14.0-fdb4975a/lib/base/base_internalhash_types -I /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__base-opam__c__v0.14.0-fdb4975a/lib/base/caml -I /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__base-opam__c__v0.14.0-fdb4975a/lib/base/shadow_stdlib -I /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__ocaml_compiler_libs-opam__c__v0.12.3-05a0c6d4/lib/ocaml-compiler-libs/common -I /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__ocaml_compiler_libs-opam__c__v0.12.3-05a0c6d4/lib/ocaml-compiler-libs/shadow -I /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__ocaml_migrate_parsetree-opam__c__1.7.3-87f9c69a/lib/ocaml-migrate-parsetree -I /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__ppx__derivers-opam__c__1.2.1-23bba8ab/lib/ppx_derivers -I /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__ppxlib-opam__c__0.14.0-52cfcd40/lib/ppxlib -I /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__ppxlib-opam__c__0.14.0-52cfcd40/lib/ppxlib/ast -I /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__ppxlib-opam__c__0.14.0-52cfcd40/lib/ppxlib/print_diff -I /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__ppxlib-opam__c__0.14.0-52cfcd40/lib/ppxlib/traverse_builtins -I /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__result-opam__c__1.5-ed51a91d/lib/result -I /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__sexplib0-opam__c__v0.14.0-d5d0273d/lib/sexplib0 -I /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__stdio-opam__c__v0.14.0-c64007bd/lib/stdio -no-alias-deps -opaque -open Ppx_deriving_accessors -o src/.ppx_deriving_accessors.objs/byte/ppx_deriving_accessors__Ppx.cmo -c -impl src/Ppx.re.pp.ml)
+$ (cd _build/default && /Users/mandalarian/.esy/3____________________________________________________________/i/ocaml-4.10.0-f28f0ffe/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -a -o src/ppx_deriving_accessors.cma -linkall src/.ppx_deriving_accessors.objs/byte/ppx_deriving_accessors.cmo src/.ppx_deriving_accessors.objs/byte/ppx_deriving_accessors__Ppx.cmo)
+$ (cd _build/default && /Users/mandalarian/.esy/3____________________________________________________________/i/ocaml-4.10.0-f28f0ffe/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -49 -nopervasives -nostdlib -g -I src/.ppx_deriving_accessors.objs/byte -I src/.ppx_deriving_accessors.objs/native -intf-suffix .ml-gen -no-alias-deps -opaque -o src/.ppx_deriving_accessors.objs/native/ppx_deriving_accessors.cmx -c -impl src/ppx_deriving_accessors.ml-gen)
+$ (cd _build/default && /Users/mandalarian/.esy/3____________________________________________________________/i/ocaml-4.10.0-f28f0ffe/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I src/.ppx_deriving_accessors.objs/byte -I src/.ppx_deriving_accessors.objs/native -I /Users/mandalarian/.esy/3____________________________________________________________/i/ocaml-4.10.0-f28f0ffe/lib/ocaml/compiler-libs -I /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__base-opam__c__v0.14.0-fdb4975a/lib/base -I /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__base-opam__c__v0.14.0-fdb4975a/lib/base/base_internalhash_types -I /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__base-opam__c__v0.14.0-fdb4975a/lib/base/caml -I /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__base-opam__c__v0.14.0-fdb4975a/lib/base/shadow_stdlib -I /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__ocaml_compiler_libs-opam__c__v0.12.3-05a0c6d4/lib/ocaml-compiler-libs/common -I /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__ocaml_compiler_libs-opam__c__v0.12.3-05a0c6d4/lib/ocaml-compiler-libs/shadow -I /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__ocaml_migrate_parsetree-opam__c__1.7.3-87f9c69a/lib/ocaml-migrate-parsetree -I /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__ppx__derivers-opam__c__1.2.1-23bba8ab/lib/ppx_derivers -I /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__ppxlib-opam__c__0.14.0-52cfcd40/lib/ppxlib -I /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__ppxlib-opam__c__0.14.0-52cfcd40/lib/ppxlib/ast -I /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__ppxlib-opam__c__0.14.0-52cfcd40/lib/ppxlib/print_diff -I /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__ppxlib-opam__c__0.14.0-52cfcd40/lib/ppxlib/traverse_builtins -I /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__result-opam__c__1.5-ed51a91d/lib/result -I /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__sexplib0-opam__c__v0.14.0-d5d0273d/lib/sexplib0 -I /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__stdio-opam__c__v0.14.0-c64007bd/lib/stdio -intf-suffix .ml -no-alias-deps -opaque -open Ppx_deriving_accessors -o src/.ppx_deriving_accessors.objs/native/ppx_deriving_accessors__Ppx.cmx -c -impl src/Ppx.re.pp.ml)
+$ (cd _build/default && /Users/mandalarian/.esy/3____________________________________________________________/i/ocaml-4.10.0-f28f0ffe/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -a -o src/ppx_deriving_accessors.cmxa -linkall src/.ppx_deriving_accessors.objs/native/ppx_deriving_accessors.cmx src/.ppx_deriving_accessors.objs/native/ppx_deriving_accessors__Ppx.cmx)
+$ (cd _build/default && /Users/mandalarian/.esy/3____________________________________________________________/i/ocaml-4.10.0-f28f0ffe/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I bin/.Bin.eobjs/byte -I /Users/mandalarian/.esy/3____________________________________________________________/i/ocaml-4.10.0-f28f0ffe/lib/ocaml/compiler-libs -I /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__base-opam__c__v0.14.0-fdb4975a/lib/base -I /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__base-opam__c__v0.14.0-fdb4975a/lib/base/base_internalhash_types -I /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__base-opam__c__v0.14.0-fdb4975a/lib/base/caml -I /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__base-opam__c__v0.14.0-fdb4975a/lib/base/shadow_stdlib -I /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__ocaml_compiler_libs-opam__c__v0.12.3-05a0c6d4/lib/ocaml-compiler-libs/common -I /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__ocaml_compiler_libs-opam__c__v0.12.3-05a0c6d4/lib/ocaml-compiler-libs/shadow -I /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__ocaml_migrate_parsetree-opam__c__1.7.3-87f9c69a/lib/ocaml-migrate-parsetree -I /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__ppx__derivers-opam__c__1.2.1-23bba8ab/lib/ppx_derivers -I /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__ppxlib-opam__c__0.14.0-52cfcd40/lib/ppxlib -I /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__ppxlib-opam__c__0.14.0-52cfcd40/lib/ppxlib/ast -I /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__ppxlib-opam__c__0.14.0-52cfcd40/lib/ppxlib/print_diff -I /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__ppxlib-opam__c__0.14.0-52cfcd40/lib/ppxlib/traverse_builtins -I /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__result-opam__c__1.5-ed51a91d/lib/result -I /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__sexplib0-opam__c__v0.14.0-d5d0273d/lib/sexplib0 -I /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__stdio-opam__c__v0.14.0-c64007bd/lib/stdio -I src/.ppx_deriving_accessors.objs/byte -I src/.ppx_deriving_accessors.objs/native -no-alias-deps -opaque -o bin/.Bin.eobjs/byte/dune__exe__Bin.cmo -c -impl bin/Bin.re.ml)
+$ (cd _build/default && /Users/mandalarian/.esy/3____________________________________________________________/i/ocaml-4.10.0-f28f0ffe/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -linkall -I bin/.Bin.eobjs/byte -I bin/.Bin.eobjs/native -I /Users/mandalarian/.esy/3____________________________________________________________/i/ocaml-4.10.0-f28f0ffe/lib/ocaml/compiler-libs -I /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__base-opam__c__v0.14.0-fdb4975a/lib/base -I /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__base-opam__c__v0.14.0-fdb4975a/lib/base/base_internalhash_types -I /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__base-opam__c__v0.14.0-fdb4975a/lib/base/caml -I /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__base-opam__c__v0.14.0-fdb4975a/lib/base/shadow_stdlib -I /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__ocaml_compiler_libs-opam__c__v0.12.3-05a0c6d4/lib/ocaml-compiler-libs/common -I /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__ocaml_compiler_libs-opam__c__v0.12.3-05a0c6d4/lib/ocaml-compiler-libs/shadow -I /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__ocaml_migrate_parsetree-opam__c__1.7.3-87f9c69a/lib/ocaml-migrate-parsetree -I /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__ppx__derivers-opam__c__1.2.1-23bba8ab/lib/ppx_derivers -I /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__ppxlib-opam__c__0.14.0-52cfcd40/lib/ppxlib -I /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__ppxlib-opam__c__0.14.0-52cfcd40/lib/ppxlib/ast -I /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__ppxlib-opam__c__0.14.0-52cfcd40/lib/ppxlib/print_diff -I /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__ppxlib-opam__c__0.14.0-52cfcd40/lib/ppxlib/traverse_builtins -I /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__result-opam__c__1.5-ed51a91d/lib/result -I /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__sexplib0-opam__c__v0.14.0-d5d0273d/lib/sexplib0 -I /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__stdio-opam__c__v0.14.0-c64007bd/lib/stdio -I src/.ppx_deriving_accessors.objs/byte -I src/.ppx_deriving_accessors.objs/native -intf-suffix .ml -no-alias-deps -opaque -o bin/.Bin.eobjs/native/dune__exe__Bin.cmx -c -impl bin/Bin.re.ml)
+$ (cd _build/default && /Users/mandalarian/.esy/3____________________________________________________________/i/ocaml-4.10.0-f28f0ffe/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -shared -linkall -I src -o src/ppx_deriving_accessors.cmxs src/ppx_deriving_accessors.cmxa)
+$ (cd _build/default && /Users/mandalarian/.esy/3____________________________________________________________/i/ocaml-4.10.0-f28f0ffe/bin/ocamlopt.opt -g -o .ppx/fc87ebbe1165156f488723ab734c6db8/ppx.exe -w -24 -I /Users/mandalarian/.esy/3____________________________________________________________/i/ocaml-4.10.0-f28f0ffe/lib/ocaml/compiler-libs -I /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__base-opam__c__v0.14.0-fdb4975a/lib/base -I /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__base-opam__c__v0.14.0-fdb4975a/lib/base/base_internalhash_types -I /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__base-opam__c__v0.14.0-fdb4975a/lib/base/caml -I /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__base-opam__c__v0.14.0-fdb4975a/lib/base/shadow_stdlib -I /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__ocaml_compiler_libs-opam__c__v0.12.3-05a0c6d4/lib/ocaml-compiler-libs/common -I /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__ocaml_compiler_libs-opam__c__v0.12.3-05a0c6d4/lib/ocaml-compiler-libs/shadow -I /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__ocaml_migrate_parsetree-opam__c__1.7.3-87f9c69a/lib/ocaml-migrate-parsetree -I /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__ppx__derivers-opam__c__1.2.1-23bba8ab/lib/ppx_derivers -I /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__ppxlib-opam__c__0.14.0-52cfcd40/lib/ppxlib -I /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__ppxlib-opam__c__0.14.0-52cfcd40/lib/ppxlib/ast -I /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__ppxlib-opam__c__0.14.0-52cfcd40/lib/ppxlib/print_diff -I /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__ppxlib-opam__c__0.14.0-52cfcd40/lib/ppxlib/traverse_builtins -I /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__result-opam__c__1.5-ed51a91d/lib/result -I /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__sexplib0-opam__c__v0.14.0-d5d0273d/lib/sexplib0 -I /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__stdio-opam__c__v0.14.0-c64007bd/lib/stdio -I src -I src/.ppx_deriving_accessors.objs/byte -I src/.ppx_deriving_accessors.objs/native /Users/mandalarian/.esy/3____________________________________________________________/i/ocaml-4.10.0-f28f0ffe/lib/ocaml/compiler-libs/ocamlcommon.cmxa /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__ocaml_compiler_libs-opam__c__v0.12.3-05a0c6d4/lib/ocaml-compiler-libs/common/ocaml_common.cmxa /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__ocaml_compiler_libs-opam__c__v0.12.3-05a0c6d4/lib/ocaml-compiler-libs/shadow/ocaml_shadow.cmxa /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__result-opam__c__1.5-ed51a91d/lib/result/result.cmxa /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__ppx__derivers-opam__c__1.2.1-23bba8ab/lib/ppx_derivers/ppx_derivers.cmxa /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__ocaml_migrate_parsetree-opam__c__1.7.3-87f9c69a/lib/ocaml-migrate-parsetree/migrate_parsetree.cmxa /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__ppxlib-opam__c__0.14.0-52cfcd40/lib/ppxlib/ast/ppxlib_ast.cmxa /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__base-opam__c__v0.14.0-fdb4975a/lib/base/base_internalhash_types/base_internalhash_types.cmxa /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__base-opam__c__v0.14.0-fdb4975a/lib/base/caml/caml.cmxa /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__sexplib0-opam__c__v0.14.0-d5d0273d/lib/sexplib0/sexplib0.cmxa /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__base-opam__c__v0.14.0-fdb4975a/lib/base/shadow_stdlib/shadow_stdlib.cmxa /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__base-opam__c__v0.14.0-fdb4975a/lib/base/base.cmxa /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__stdio-opam__c__v0.14.0-c64007bd/lib/stdio/stdio.cmxa /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__ppxlib-opam__c__0.14.0-52cfcd40/lib/ppxlib/print_diff/ppxlib_print_diff.cmxa /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__ppxlib-opam__c__0.14.0-52cfcd40/lib/ppxlib/traverse_builtins/ppxlib_traverse_builtins.cmxa /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__ppxlib-opam__c__0.14.0-52cfcd40/lib/ppxlib/ppxlib.cmxa src/ppx_deriving_accessors.cmxa .ppx/fc87ebbe1165156f488723ab734c6db8/_ppx.ml)
+$ (cd _build/default && /Users/mandalarian/.esy/3____________________________________________________________/i/ocaml-4.10.0-f28f0ffe/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -linkall -o bin/Bin.exe /Users/mandalarian/.esy/3____________________________________________________________/i/ocaml-4.10.0-f28f0ffe/lib/ocaml/compiler-libs/ocamlcommon.cmxa /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__ocaml_compiler_libs-opam__c__v0.12.3-05a0c6d4/lib/ocaml-compiler-libs/common/ocaml_common.cmxa /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__ocaml_compiler_libs-opam__c__v0.12.3-05a0c6d4/lib/ocaml-compiler-libs/shadow/ocaml_shadow.cmxa /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__result-opam__c__1.5-ed51a91d/lib/result/result.cmxa /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__ppx__derivers-opam__c__1.2.1-23bba8ab/lib/ppx_derivers/ppx_derivers.cmxa /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__ocaml_migrate_parsetree-opam__c__1.7.3-87f9c69a/lib/ocaml-migrate-parsetree/migrate_parsetree.cmxa /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__ppxlib-opam__c__0.14.0-52cfcd40/lib/ppxlib/ast/ppxlib_ast.cmxa /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__base-opam__c__v0.14.0-fdb4975a/lib/base/base_internalhash_types/base_internalhash_types.cmxa -I /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__base-opam__c__v0.14.0-fdb4975a/lib/base/base_internalhash_types /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__base-opam__c__v0.14.0-fdb4975a/lib/base/caml/caml.cmxa /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__sexplib0-opam__c__v0.14.0-d5d0273d/lib/sexplib0/sexplib0.cmxa /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__base-opam__c__v0.14.0-fdb4975a/lib/base/shadow_stdlib/shadow_stdlib.cmxa /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__base-opam__c__v0.14.0-fdb4975a/lib/base/base.cmxa -I /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__base-opam__c__v0.14.0-fdb4975a/lib/base /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__stdio-opam__c__v0.14.0-c64007bd/lib/stdio/stdio.cmxa /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__ppxlib-opam__c__0.14.0-52cfcd40/lib/ppxlib/print_diff/ppxlib_print_diff.cmxa /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__ppxlib-opam__c__0.14.0-52cfcd40/lib/ppxlib/traverse_builtins/ppxlib_traverse_builtins.cmxa /Users/mandalarian/.esy/3____________________________________________________________/i/opam__s__ppxlib-opam__c__0.14.0-52cfcd40/lib/ppxlib/ppxlib.cmxa src/ppx_deriving_accessors.cmxa bin/.Bin.eobjs/native/dune__exe__Bin.cmx)
+$ (cd _build/default && .ppx/fc87ebbe1165156f488723ab734c6db8/ppx.exe -o manualTest/ManualTest.re.pp.ml --impl manualTest/ManualTest.re.ml -corrected-suffix .ppx-corrected -diff-cmd - -dump-ast)
+$ (cd _build/default && /Users/mandalarian/.esy/3____________________________________________________________/i/ocaml-4.10.0-f28f0ffe/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I manualTest/.ManualTest.eobjs/byte -no-alias-deps -opaque -o manualTest/.ManualTest.eobjs/byte/dune__exe__ManualTest.cmo -c -impl manualTest/ManualTest.re.pp.ml)
+$ (cd _build/default && /Users/mandalarian/.esy/3____________________________________________________________/i/ocaml-4.10.0-f28f0ffe/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I manualTest/.ManualTest.eobjs/byte -I manualTest/.ManualTest.eobjs/native -intf-suffix .ml -no-alias-deps -opaque -o manualTest/.ManualTest.eobjs/native/dune__exe__ManualTest.cmx -c -impl manualTest/ManualTest.re.pp.ml)
+$ (cd _build/default && /Users/mandalarian/.esy/3____________________________________________________________/i/ocaml-4.10.0-f28f0ffe/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o manualTest/ManualTest.exe manualTest/.ManualTest.eobjs/native/dune__exe__ManualTest.cmx)
